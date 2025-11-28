@@ -38,8 +38,8 @@ const Navbar = () => {
       <div className="container-custom px-6 md:px-12">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-display font-bold">
-            <span className="text-gradient">YourBrand</span>
+          <div className="text-3xl font-display font-bold">
+            <span className="text-primary-400">Viral View</span>
           </div>
 
           {/* Desktop Navigation */}

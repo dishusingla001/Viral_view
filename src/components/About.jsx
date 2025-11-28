@@ -13,7 +13,7 @@ const About = () => {
           {/* Image/Visual Side */}
           <div className="order-2 md:order-1">
             <div className="relative">
-              <div className="w-full h-[400px] bg-gradient-to-br from-primary-600/30 via-accent-600/30 to-cyan-500/30 backdrop-blur-sm border border-primary-500/20 rounded-3xl overflow-hidden shadow-xl shadow-primary-500/20">
+              <div className="w-full h-[400px] bg-primary-600/20 border border-primary-500/20 rounded-3xl overflow-hidden shadow-xl shadow-primary-500/20">
                 {/* Placeholder for profile image */}
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="text-center text-gray-400">

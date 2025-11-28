@@ -74,7 +74,7 @@ const Portfolio = () => {
               className="card group overflow-hidden"
             >
               {/* Project Image/Icon */}
-              <div className="h-48 bg-gradient-to-br from-primary-600 via-accent-600 to-cyan-500 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
+              <div className="h-48 bg-primary-600 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
                 {project.image}
               </div>
 

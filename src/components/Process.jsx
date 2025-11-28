@@ -62,7 +62,7 @@ const Process = () => {
         <div className="hidden lg:block">
           <div className="relative">
             {/* Connection Line */}
-            <div className="absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-primary-500 via-accent-500 to-cyan-400"></div>
+            <div className="absolute top-24 left-0 right-0 h-1 bg-primary-500"></div>
 
             <div className="grid grid-cols-4 gap-8 relative">
               {steps.map((step, index) => (
@@ -98,11 +98,11 @@ const Process = () => {
             <div key={index} className="flex gap-6">
               {/* Number & Line */}
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-accent-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary-500/30">
+                <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary-500/30">
                   {step.number}
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="w-1 h-full bg-gradient-to-b from-primary-500 via-accent-500 to-cyan-400 mt-4"></div>
+                  <div className="w-1 h-full bg-primary-500 mt-4"></div>
                 )}
               </div>
 

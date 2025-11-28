@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-dark-950 via-dark-900 to-dark-800"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark-900"
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -22,13 +22,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container-custom px-6 md:px-12 pt-20 relative z-10">
+      <div className="container-custom px-6 md:px-12 pt-32 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center md:text-left animate-slide-in">
-            <div className="inline-block mb-4 px-4 py-2 bg-primary-500/20 backdrop-blur-sm border border-primary-500/30 rounded-full text-primary-300 font-semibold text-sm">
-              Marketing Strategist
-            </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
               Helping Brands{' '}
               <span className="text-gradient">Grow</span> with Strategic Marketing
@@ -73,7 +70,7 @@ const Hero = () => {
           <div className="relative animate-fade-in hidden md:block">
             <div className="relative w-full h-[500px] flex items-center justify-center">
               {/* Placeholder for hero image/illustration */}
-              <div className="w-full h-full bg-gradient-to-br from-primary-600 via-accent-600 to-cyan-500 rounded-3xl shadow-2xl shadow-primary-500/30 transform hover:scale-105 transition-transform duration-500 flex items-center justify-center">
+              <div className="w-full h-full bg-primary-600 rounded-3xl shadow-2xl shadow-primary-500/30 transform hover:scale-105 transition-transform duration-500 flex items-center justify-center">
                 <div className="text-center text-white p-8">
                   <svg
                     className="w-32 h-32 mx-auto mb-4 opacity-80"

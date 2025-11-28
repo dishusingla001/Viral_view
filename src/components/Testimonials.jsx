@@ -43,7 +43,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="section-padding bg-gradient-to-br from-dark-800 to-dark-900">
+    <section id="testimonials" className="section-padding bg-dark-800">
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

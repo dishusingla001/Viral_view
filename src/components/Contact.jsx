@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-gradient-to-br from-primary-600 via-accent-600 to-cyan-500 text-white relative overflow-hidden">
+    <section id="contact" className="section-padding bg-primary-600 text-white relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
@@ -62,8 +62,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold mb-1">Email</div>
-                  <a href="mailto:hello@yourbrand.com" className="text-white/90 hover:text-white transition-colors">
-                    hello@yourbrand.com
+                  <a href="mailto:hello@viralview.com" className="text-white/90 hover:text-white transition-colors">
+                    hello@viralview.com
                   </a>
                 </div>
               </div>
@@ -208,7 +208,7 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-primary-600 via-accent-600 to-cyan-500 text-white font-semibold py-4 rounded-lg hover:from-primary-700 hover:via-accent-700 hover:to-cyan-600 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/50 hover:scale-105"
+                  className="w-full bg-dark-900 hover:bg-dark-800 text-white font-semibold py-4 rounded-lg transition-all duration-300 hover:shadow-2xl hover:scale-105"
                 >
                   Send Message
                 </button>

@@ -23,8 +23,8 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="md:col-span-2">
             <div className="text-2xl font-display font-bold mb-4">
-              <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-                YourBrand
+              <span className="text-primary-400">
+                Viral View
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
@@ -99,11 +99,11 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Get in Touch</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="mailto:hello@yourbrand.com" className="hover:text-white transition-colors duration-300 flex items-center gap-2">
+                <a href="mailto:hello@viralview.com" className="hover:text-white transition-colors duration-300 flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  hello@yourbrand.com
+                  hello@viralview.com
                 </a>
               </li>
               <li>
@@ -122,7 +122,7 @@ const Footer = () => {
         <div className="border-t border-dark-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © {currentYear} YourBrand. All rights reserved.
+              © {currentYear} Viral View. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
