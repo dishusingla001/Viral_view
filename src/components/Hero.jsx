@@ -1,4 +1,23 @@
+import { useState, useEffect } from 'react';
+
 const Hero = () => {
+  const [displayText, setDisplayText] = useState('');
+  const fullText = 'Helping Brands Grow with Strategic Marketing';
+  
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setDisplayText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 100);
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -22,13 +41,16 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="container-custom px-6 md:px-12 pt-32 relative z-10">
+      <div className="container-custom px-6 md:px-12 pt-32 pb-20 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center md:text-left animate-slide-in">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight mb-6">
-              Helping Brands{' '}
-              <span className="text-gradient">Grow</span> with Strategic Marketing
+              {displayText.split('Grow').map((part, index) => {
+                if (index === 0) return <span key={index}>{part}</span>;
+                return <span key={index}><span className="text-gradient">Grow</span>{part}</span>;
+              })}
+              <span className="animate-pulse">|</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
               Transforming businesses through data-driven strategies, creative campaigns, 
@@ -48,27 +70,11 @@ const Hero = () => {
                 View Services
               </button>
             </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-dark-700">
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary-400">5+</div>
-                <div className="text-sm text-gray-400 mt-1">Years Experience</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary-400">100+</div>
-                <div className="text-sm text-gray-400 mt-1">Projects Done</div>
-              </div>
-              <div>
-                <div className="text-3xl md:text-4xl font-bold text-primary-400">50+</div>
-                <div className="text-sm text-gray-400 mt-1">Happy Clients</div>
-              </div>
-            </div>
           </div>
 
           {/* Visual Element */}
           <div className="relative animate-fade-in hidden md:block">
-            <div className="relative w-full h-[500px] flex items-center justify-center">
+            <div className="relative w-full h-[400px] flex items-center justify-center">
               {/* Placeholder for hero image/illustration */}
               <div className="w-full h-full bg-primary-600 rounded-3xl shadow-2xl shadow-primary-500/30 transform hover:scale-105 transition-transform duration-500 flex items-center justify-center">
                 <div className="text-center text-white p-8">
@@ -87,21 +93,6 @@ const Hero = () => {
                   </svg>
                   <p className="text-lg font-semibold">Replace with your hero image</p>
                   <p className="text-sm opacity-90 mt-2">Dashboard mockup or brand visual</p>
-                </div>
-              </div>
-              
-              {/* Floating Cards */}
-              <div className="absolute -top-6 -left-6 bg-dark-800 border border-primary-500/30 rounded-xl shadow-xl shadow-primary-500/20 p-4 animate-pulse">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-sm font-semibold text-gray-200">+250% ROI</span>
-                </div>
-              </div>
-              
-              <div className="absolute -bottom-6 -right-6 bg-dark-800 border border-accent-500/30 rounded-xl shadow-xl shadow-accent-500/20 p-4 animate-pulse delay-100">
-                <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-cyan-400 rounded-full"></div>
-                  <span className="text-sm font-semibold text-gray-200">10M+ Reach</span>
                 </div>
               </div>
             </div>

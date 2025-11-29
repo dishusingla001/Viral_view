@@ -57,6 +57,7 @@ export default {
         'fade-in': 'fadeIn 0.6s ease-in-out',
         'slide-up': 'slideUp 0.6s ease-out',
         'slide-in': 'slideIn 0.6s ease-out',
+        'typing': 'typing 3s steps(30, end) forwards',
       },
       keyframes: {
         fadeIn: {
@@ -70,6 +71,11 @@ export default {
         slideIn: {
           '0%': { transform: 'translateX(-30px)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        typing: {
+          '0%': { width: '0', opacity: '0' },
+          '1%': { opacity: '1' },
+          '100%': { width: '100%', opacity: '1' },
         },
       },
     },
