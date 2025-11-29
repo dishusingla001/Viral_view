@@ -61,7 +61,7 @@ const Services = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary-500/20 backdrop-blur-sm border border-primary-500/30 rounded-full text-primary-300 font-semibold text-sm">
+          <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm">
             What I Do
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -79,10 +79,10 @@ const Services = () => {
               key={index}
               className="card p-8 group"
             >
-              <div className="text-primary-400 mb-6 transform group-hover:scale-110 group-hover:text-accent-400 transition-all duration-300">
+              <div className="text-white mb-6 transform group-hover:scale-110 transition-all duration-300">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-100 group-hover:text-primary-400 transition-colors duration-300">
+              <h3 className="text-2xl font-bold mb-4 text-gray-100 group-hover:text-white transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-gray-400 leading-relaxed">

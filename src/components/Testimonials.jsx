@@ -47,7 +47,7 @@ const Testimonials = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary-500/20 backdrop-blur-sm border border-primary-500/30 rounded-full text-primary-300 font-semibold text-sm">
+          <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm">
             Testimonials
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -134,7 +134,7 @@ const Testimonials = () => {
             <div className="flex justify-center gap-4 mt-6">
               <button
                 onClick={prevTestimonial}
-                className="w-12 h-12 bg-dark-800 border border-primary-500/30 rounded-full shadow-md hover:shadow-xl hover:shadow-primary-500/20 transition-all duration-300 flex items-center justify-center text-primary-400 hover:bg-dark-700 hover:border-primary-400/50"
+                className="w-12 h-12 bg-dark-800 border border-white/30 rounded-full shadow-md hover:shadow-xl hover:shadow-white/20 transition-all duration-300 flex items-center justify-center text-white hover:bg-dark-700 hover:border-white/50"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -142,7 +142,7 @@ const Testimonials = () => {
               </button>
               <button
                 onClick={nextTestimonial}
-                className="w-12 h-12 bg-dark-800 border border-primary-500/30 rounded-full shadow-md hover:shadow-xl hover:shadow-primary-500/20 transition-all duration-300 flex items-center justify-center text-primary-400 hover:bg-dark-700 hover:border-primary-400/50"
+                className="w-12 h-12 bg-dark-800 border border-white/30 rounded-full shadow-md hover:shadow-xl hover:shadow-white/20 transition-all duration-300 flex items-center justify-center text-white hover:bg-dark-700 hover:border-white/50"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -157,7 +157,7 @@ const Testimonials = () => {
                   key={index}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentIndex ? 'bg-primary-400 w-8' : 'bg-dark-600'
+                    index === currentIndex ? 'bg-white w-8' : 'bg-dark-600'
                   }`}
                 />
               ))}

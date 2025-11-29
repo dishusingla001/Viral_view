@@ -55,7 +55,7 @@ const Portfolio = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary-500/20 backdrop-blur-sm border border-primary-500/30 rounded-full text-primary-300 font-semibold text-sm">
+          <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm">
             Portfolio
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -74,14 +74,14 @@ const Portfolio = () => {
               className="card group overflow-hidden"
             >
               {/* Project Image/Icon */}
-              <div className="h-48 bg-primary-600 flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
+              <div className="h-48 bg-white flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
                 {project.image}
               </div>
 
               {/* Project Content */}
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm font-semibold text-primary-400">
+                  <span className="text-sm font-semibold text-white">
                     {project.category}
                   </span>
                   <span className="px-3 py-1 bg-accent-500/20 border border-accent-500/30 text-accent-300 rounded-full text-xs font-bold">
@@ -89,7 +89,7 @@ const Portfolio = () => {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold mb-3 text-gray-100 group-hover:text-primary-400 transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-3 text-gray-100 group-hover:text-white transition-colors duration-300">
                   {project.title}
                 </h3>
 

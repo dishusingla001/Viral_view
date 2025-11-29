@@ -13,7 +13,7 @@ const About = () => {
           {/* Image/Visual Side */}
           <div className="order-2 md:order-1">
             <div className="relative">
-              <div className="w-full h-[400px] bg-primary-600/20 border border-primary-500/20 rounded-3xl overflow-hidden shadow-xl shadow-primary-500/20">
+              <div className="w-full h-[400px] bg-white/10 border border-white/20 rounded-3xl overflow-hidden shadow-xl shadow-white/10">
                 {/* Placeholder for profile image */}
                 <div className="w-full h-full flex items-center justify-center">
                   <div className="text-center text-gray-400">
@@ -34,16 +34,12 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              
-              {/* Decorative Element */}
-              <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-accent-600 rounded-full opacity-30 blur-2xl -z-10"></div>
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary-600 rounded-full opacity-30 blur-2xl -z-10"></div>
             </div>
           </div>
 
           {/* Text Content */}
           <div className="order-1 md:order-2">
-            <div className="inline-block mb-4 px-4 py-2 bg-primary-500/20 backdrop-blur-sm border border-primary-500/30 rounded-full text-primary-300 font-semibold text-sm">
+            <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm">
               About Me
             </div>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -66,7 +62,7 @@ const About = () => {
                 {skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-5 py-2 bg-primary-500/20 border border-primary-500/30 text-primary-300 rounded-full font-medium text-sm hover:bg-primary-500/30 hover:border-primary-400/50 transition-colors duration-300"
+                    className="px-5 py-2 bg-white/20 border border-white/30 text-white rounded-full font-medium text-sm hover:bg-white/30 hover:border-white/50 transition-colors duration-300"
                   >
                     {skill}
                   </span>

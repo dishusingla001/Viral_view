@@ -28,19 +28,8 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark-900"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark-950"
     >
-      {/* Background Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary-600 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-accent-600 rounded-full opacity-20 blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full">
-          <div className="absolute top-20 left-20 w-2 h-2 bg-primary-400 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-32 w-3 h-3 bg-accent-400 rounded-full animate-pulse delay-100"></div>
-          <div className="absolute bottom-32 left-40 w-2 h-2 bg-cyan-400 rounded-full animate-pulse delay-200"></div>
-        </div>
-      </div>
-
       <div className="container-custom px-6 md:px-12 pt-32 pb-20 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -76,8 +65,8 @@ const Hero = () => {
           <div className="relative animate-fade-in hidden md:block">
             <div className="relative w-full h-[400px] flex items-center justify-center">
               {/* Placeholder for hero image/illustration */}
-              <div className="w-full h-full bg-primary-600 rounded-3xl shadow-2xl shadow-primary-500/30 transform hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                <div className="text-center text-white p-8">
+              <div className="w-full h-full bg-white rounded-3xl shadow-2xl shadow-white/10 transform hover:scale-105 transition-transform duration-500 flex items-center justify-center">
+                <div className="text-center text-gray-800 p-8">
                   <svg
                     className="w-32 h-32 mx-auto mb-4 opacity-80"
                     fill="none"

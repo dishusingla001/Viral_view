@@ -31,12 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="section-padding bg-primary-600 text-white relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-700 rounded-full opacity-20 blur-3xl animate-pulse delay-100"></div>
-      </div>
+    <section id="contact" className="section-padding bg-dark-900 text-white relative overflow-hidden">
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - CTA & Info */}

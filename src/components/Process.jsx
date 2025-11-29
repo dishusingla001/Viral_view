@@ -47,7 +47,7 @@ const Process = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary-500/20 backdrop-blur-sm border border-primary-500/30 rounded-full text-primary-300 font-semibold text-sm">
+          <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white font-semibold text-sm">
             How I Work
           </div>
           <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
@@ -62,19 +62,19 @@ const Process = () => {
         <div className="hidden lg:block">
           <div className="relative">
             {/* Connection Line */}
-            <div className="absolute top-24 left-0 right-0 h-1 bg-primary-500"></div>
+            <div className="absolute top-24 left-0 right-0 h-1 bg-white"></div>
 
             <div className="grid grid-cols-4 gap-8 relative">
               {steps.map((step, index) => (
                 <div key={index} className="text-center">
                   {/* Icon Circle */}
                   <div className="relative mb-6">
-                    <div className="w-48 h-48 mx-auto bg-dark-800 border-4 border-primary-500/50 rounded-full shadow-xl shadow-primary-500/20 flex items-center justify-center hover:border-primary-400 hover:shadow-2xl hover:shadow-primary-500/30 transition-all duration-300 hover:scale-110 group">
+                    <div className="w-48 h-48 mx-auto bg-dark-800 border-4 border-white/50 rounded-full shadow-xl shadow-white/20 flex items-center justify-center hover:border-white hover:shadow-2xl hover:shadow-white/30 transition-all duration-300 hover:scale-110 group">
                       <div className="text-center">
-                        <div className="text-primary-400 mb-2 transform group-hover:scale-110 transition-transform">
+                        <div className="text-white mb-2 transform group-hover:scale-110 transition-transform">
                           {step.icon}
                         </div>
-                        <div className="text-5xl font-bold text-dark-700 group-hover:text-primary-600 transition-colors">
+                        <div className="text-5xl font-bold text-dark-700 group-hover:text-white transition-colors">
                           {step.number}
                         </div>
                       </div>
@@ -98,18 +98,18 @@ const Process = () => {
             <div key={index} className="flex gap-6">
               {/* Number & Line */}
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary-500/30">
+                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-dark-950 font-bold text-xl shadow-lg shadow-white/30">
                   {step.number}
                 </div>
                 {index < steps.length - 1 && (
-                  <div className="w-1 h-full bg-primary-500 mt-4"></div>
+                  <div className="w-1 h-full bg-white mt-4"></div>
                 )}
               </div>
 
               {/* Content */}
               <div className="flex-1 pb-8">
                 <div className="card p-6">
-                  <div className="text-primary-400 mb-3">
+                  <div className="text-white mb-3">
                     {step.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-3 text-gray-100">{step.title}</h3>

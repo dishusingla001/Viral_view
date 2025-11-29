@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-3xl font-display font-bold">
-            <span className="text-primary-400">Viral View</span>
+            <span className="text-white">Viral View</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -48,7 +48,7 @@ const Navbar = () => {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-gray-300 hover:text-primary-400 font-medium transition-colors duration-300"
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-300"
               >
                 {link.name}
               </button>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-gray-300 hover:text-primary-400 font-medium text-left transition-colors duration-300"
+                  className="text-gray-300 hover:text-white font-medium text-left transition-colors duration-300"
                 >
                   {link.name}
                 </button>
