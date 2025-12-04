@@ -13,26 +13,13 @@ const About = () => {
           {/* Image/Visual Side */}
           <div className="order-2 md:order-1">
             <div className="relative">
-              <div className="w-full h-[400px] bg-white/10 border border-white/20 rounded-3xl overflow-hidden shadow-xl shadow-white/10">
-                {/* Placeholder for profile image */}
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <svg
-                      className="w-32 h-32 mx-auto mb-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                      />
-                    </svg>
-                    <p className="text-sm font-medium">Your professional photo</p>
-                  </div>
-                </div>
+              <div className="w-full h-[400px] rounded-3xl overflow-hidden shadow-xl shadow-white/10">
+                {/* Professional photo */}
+                <img
+                  src="/main.png"
+                  alt="Professional Photo"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

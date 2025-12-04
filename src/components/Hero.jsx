@@ -64,25 +64,13 @@ const Hero = () => {
           {/* Visual Element */}
           <div className="relative animate-fade-in hidden md:block">
             <div className="relative w-full h-[400px] flex items-center justify-center">
-              {/* Placeholder for hero image/illustration */}
-              <div className="w-full h-full bg-white rounded-3xl shadow-2xl shadow-white/10 transform hover:scale-105 transition-transform duration-500 flex items-center justify-center">
-                <div className="text-center text-gray-800 p-8">
-                  <svg
-                    className="w-32 h-32 mx-auto mb-4 opacity-80"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    />
-                  </svg>
-                  <p className="text-lg font-semibold">Replace with your hero image</p>
-                  <p className="text-sm opacity-90 mt-2">Dashboard mockup or brand visual</p>
-                </div>
+              {/* Hero Image */}
+              <div className="w-full h-full rounded-3xl shadow-2xl shadow-white/10 transform hover:scale-105 transition-transform duration-500 overflow-hidden">
+                <img
+                  src="https://cdn.corporatefinanceinstitute.com/assets/marketing-strategy-1024x683.jpeg"
+                  alt="Marketing Strategy"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
