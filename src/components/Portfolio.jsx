@@ -1,4 +1,16 @@
+import { useState } from 'react';
+
 const Portfolio = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleProjectClick = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
+
   const projects = [
     {
       title: 'E-Commerce Growth Campaign',
@@ -71,7 +83,8 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card group overflow-hidden"
+              className="card group overflow-hidden cursor-pointer"
+              onClick={handleProjectClick}
             >
               {/* Project Image/Icon */}
               <div className="h-48 bg-white flex items-center justify-center text-7xl transform group-hover:scale-110 transition-transform duration-500">
@@ -130,6 +143,58 @@ const Portfolio = () => {
           </a>
         </div>
       </div>
+
+      {/* Custom Modal */}
+      {showModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in"
+          onClick={closeModal}
+        >
+          <div 
+            className="bg-dark-800 border-2 border-white/20 rounded-2xl shadow-2xl shadow-white/10 max-w-md w-full p-8 transform animate-slide-up"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Icon */}
+            <div className="flex justify-center mb-6">
+              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center">
+                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Title */}
+            <h3 className="text-2xl font-bold text-white text-center mb-4">
+              Private Project
+            </h3>
+
+            {/* Message */}
+            <p className="text-gray-300 text-center mb-6 leading-relaxed">
+              These projects contain confidential client information and are private. 
+              Please contact me for detailed case studies and references.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex gap-3">
+              <button
+                onClick={() => {
+                  closeModal();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="flex-1 bg-white text-dark-950 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105"
+              >
+                Contact Me
+              </button>
+              <button
+                onClick={closeModal}
+                className="flex-1 bg-white/10 border border-white/30 text-white font-semibold py-3 px-6 rounded-lg hover:bg-white/20 transition-all duration-300"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
